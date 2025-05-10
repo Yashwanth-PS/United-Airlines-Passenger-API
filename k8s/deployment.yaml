@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: passenger-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: passenger-api
+  template:
+    metadata:
+      labels:
+        app: passenger-api
+    spec:
+      containers:
+        - name: passenger-api
+          image: passenger-api:latest
+          ports:
+            - containerPort: 8080
