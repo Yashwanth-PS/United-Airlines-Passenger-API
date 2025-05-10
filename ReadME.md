@@ -21,8 +21,9 @@ A Spring Boot-based CRUD REST API for managing passenger details of United Airli
 ```docker build -t united-airlines-passenger-api .```
 
 ### ☸️ Deploy to Kubernetes
-```kubectl apply -f k8s/deployment.yaml```
-```kubectl apply -f k8s/service.yaml```
+- ```kubectl apply -f k8s/deployment.yaml```
+- ```kubectl apply -f k8s/service.yaml```
+- ```kubectl apply -f k8s/prod-values.yaml```
 
 ### 📦 Sample Passenger Object
 ```
